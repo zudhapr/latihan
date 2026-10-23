@@ -1,3 +1,5 @@
+import { Link } from 'react-router'
+
 const menus = ['dashboard', 'courses', 'users']
 
 export default function Sidebar() {
@@ -6,9 +8,9 @@ export default function Sidebar() {
       <h2 className="text-xl font-bold">Simple LMS</h2>
       <nav className="mt-8 grid gap-2">
         {menus.map((menu) => (
-          <a key={menu} href={menu} className="rounded-lg px-3 py-2 hover:bg-blue-800">
+          <Link key={menu} to={`/${menu}`} className="rounded-lg px-3 py-2 hover:bg-blue-800">
             {menu}
-          </a>
+          </Link>
         ))}
       </nav>
     </aside>
