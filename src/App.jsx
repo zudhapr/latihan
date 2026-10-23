@@ -9,10 +9,10 @@ function App() {
    return (<>    
    <Routes>
       <Route element={<AdminLayout />}>
-      <Route path="/dashboard" element={<DashboardPage />} />
-      <Route path="/courses" element={<CoursesPage />} />
-      <Route path="/users" element={<UsersPage />} />
-      <Route path="*" element={<NotFoundPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/users" element={<UsersPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
     <Outlet></Outlet>
